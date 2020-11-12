@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  padding: 5%;
+  background-color: #d88f7d;
+}
+
+.location-row {
+  
+}
+
+.weather-row {
+  
+}
