@@ -35,11 +35,12 @@ function MainContainer({locationListDefault, weatherListDefault}) {
   };
 
   if (!locationListDefault) {
-    return 'SOMETHING WENT WRONG'
+    console.log("SOMETHING WENT WRONG WHEN LOADING DATA");
+    return null;
   }
 
   return (
-    <div className='App'>
+    <div className='main-container'>
       <h1>Select a location</h1>
       <SearchBar
         input={input}
