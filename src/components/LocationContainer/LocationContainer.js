@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from "react";
-import SearchBar from "../SearchBar/SearchBar";
+import React, { useState, useEffect } from 'react';
 import './LocationContainer.css';
 
-const LocationContainer = () => {
+const LocationContainer = ({ location, weather }) => {
   return (
     <>
-     
+      {location && (
+        <h2>
+          {weather.name} - {location.postcode}
+        </h2>
+      )}
     </>
   );
 };

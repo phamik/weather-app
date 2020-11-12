@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-right: 10%;
+  border-right: black solid 2px;
+}
+
+.weather-description {
+  
+  flex-direction: column;
+  padding-left: 10%;
+}
