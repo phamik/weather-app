@@ -1,0 +1,27 @@
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.search-bar {
+  width: 20rem;
+  /* background:#F2F1F9;  */
+  /* border:none; */
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.suggestions {
+  margin: 0;
+  padding: 0;
+}
+
+.suggestion-item {
+  list-style: none;
+  padding: 0.5rem;
+  width: 20rem;
+  background:#F2F1F9; 
+
+}
