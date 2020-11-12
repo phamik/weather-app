@@ -18,9 +18,11 @@ function windDirection(angle) {
 }
 
 const WeatherContainer = ({ weather }) => {
-  // const {temp, feels_like, temp_max, temp_min, pressure, humidity} = weather.main;
+  // there is a possibility to have more than one element in array, but assuming the current state
+  // this should be sufficient 
   const { id, main, description, icon } = weather.weather[0];
 
+  // further destructuring to avoid repetition of code 
   const {
     main: { temp, feels_like, temp_max, temp_min, pressure, humidity },
     visibility,

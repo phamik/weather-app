@@ -4,12 +4,14 @@ import SearchBar from '../SearchBar/SearchBar';
 import LocationContainer from '../LocationContainer/LocationContainer';
 import WeatherContainer from '../WeatherContainer/WeatherContainer';
 
+// this component is responsible for combining the other components together 
 function MainContainer({locationListDefault, weatherListDefault}) {
   const [input, setInput] = useState('');
   const [filteredLocation, setFilteredLocation] = useState();
   const [filteredWeather, setFilteredWeather] = useState();
 
   useEffect(() => {
+    // matching location with weather data
     if (filteredLocation && filteredLocation.length === 1) {
       const locationCoordinates = {
         lon: Math.round(filteredLocation[0].longitude * 100) / 100,
